@@ -1,26 +1,20 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-group = "com.example" // TODO: Configure the project's group
-version = "0.0.1+" + libs.versions.minecraft.get() // TODO: Configure the project's version
+group = "com.marvin_elsen"
+version = "0.0.1+" + libs.versions.minecraft.get()
 
 val javaVersion = JavaVersion.VERSION_17
 
 plugins {
     base
     java
-    kotlin("jvm") version "1.8.10" // TODO: Double-check whether the Kotlin version is up-to-date
-    id("fabric-loom") version "1.1-SNAPSHOT" // TODO: Double-check whether the Fabric Loom version is up-to-date (https://fabricmc.net/develop/)
-    id("com.modrinth.minotaur") version "2.+"// TODO: Double-check whether the Modrinth Minotaur version is up-to-date (https://github.com/modrinth/minotaur#kotlin)
+    kotlin("jvm") version "1.8.10"
+    id("fabric-loom") version "1.1-SNAPSHOT"
+    id("com.modrinth.minotaur") version "2.+"// https://github.com/modrinth/minotaur#kotlin
 }
 
-repositories {
-    // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
-}
+repositories {}
 
 dependencies {
     minecraft(libs.minecraft)
@@ -36,8 +30,8 @@ dependencies {
 
 modrinth {
     // Refer to https://github.com/modrinth/minotaur#available-properties for all available properties
-    token.set(System.getenv("MODRINTH_TOKEN")) // TODO: Set the MODRINTH_TOKEN environment variable before running the modrinth task
-    projectId.set("modrinth-project-id") // TODO: Configure modrinth project ID
+    token.set(System.getenv("MODRINTH_TOKEN"))
+    projectId.set("iSeOfdfX")
     versionType.set("release") // Can be "release", "beta" or "alpha"
     uploadFile.set(tasks.remapJar)
     debugMode.set(true) // TODO: Disable modrinth's debugMode

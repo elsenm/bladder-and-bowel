@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "bladder_and_bowel",
   "version": "${modVersion}",
-  "name": "Fabric Kotlin Mod Template",
-  "description": "This is a template! Use it to implement your own Fabric mod in Kotlin!",
+  "name": "Bladder and Bowel",
+  "description": "Allows the player to urinate, defecate, fart, and burp.",
   "authors": [
-    "Firstname Lastname"
+    "Marvin Elsen"
   ],
   "contact": {
-    "email": "email@example.com",
-    "homepage": "https://example.com/",
-    "sources": "https://github.com/username/modname.git",
-    "issues": "https://github.com/username/modname/issues"
+    "email": "mods@marvin-elsen.com",
+    "homepage": "https://marvin-elsen.com/minecraft-mods/bladder-and-bowel/",
+    "sources": "https://github.com/elsenm/bladder-and-bowel.git",
+    "issues": "https://github.com/elsenm/bladder-and-bowel/issues"
   },
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/bladder_and_bowel/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.example.template.TemplateModKt::init"
+        "value": "com.marvin_elsen.bladder_and_bowel.BladderAndBowelModKt::init"
       }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "bladder_and_bowel.mixins.json"
   ],
   "depends": {
     "java": ">=${javaVersion}",

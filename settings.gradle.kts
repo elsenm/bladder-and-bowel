@@ -1,4 +1,4 @@
-rootProject.name = "fabric-kotlin-mod-template" // TODO: Configure the rootProject's name
+rootProject.name = "bladder-and-bowel"
 
 pluginManagement {
     repositories {
@@ -14,7 +14,7 @@ pluginManagement {
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
-            version("minecraft", "1.19.4") // TODO: Double-check whether all the dependency versions are up-to-date
+            version("minecraft", "1.19.4")
             version("yarn", "1.19.4+build.1")
             version("fabric-loader", "0.14.17")
             version("fabric-api", "0.76.0+1.19.4")
